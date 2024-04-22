@@ -19,7 +19,15 @@ class ProductScreen extends StatelessWidget {
             const Text('Flutter App', style: TextStyle(fontSize: 30)),
             const SizedBox(height: 50),
             const Text('Flutter app development'),
-            const Text('400€')
+            const Text('400€'),
+            const SizedBox(
+              height: 50,
+            ),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: const Text('Go back')),
           ],
         ),
       ),
